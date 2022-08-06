@@ -1,0 +1,39 @@
+<meta charset="UTF-8"> 
+
+<h1>USANDO CANVAS - CREEPER</h1>
+<br>
+<canvas width="600" height="400"> </canvas>
+
+<script >
+	var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+
+    pincel.fillStyle = "lightgrey" //propiedad o caracteristica
+    //              x y   x  y
+    pincel.fillRect(0,0,600,400); //funcion
+
+    //cabeza
+    pincel.fillStyle = "darkgreen" //propiedad o caracteristica
+    //  eje x 200 ; eje y 50
+    pincel.fillRect(200,50,350,300); //funcion
+
+    //ojos
+    pincel.fillStyle = "black" //propiedad o caracteristica
+    // que empiece desde la posicion 250 y 410 del eje x y que empiece desde la posicion 110 del eje y
+    pincel.fillRect(250,110,90,90); //funcion ojo N°1
+    pincel.fillRect(410,110,90,90); //funcion ojo N°2
+
+    //nariz
+    pincel.fillStyle = "black" //propiedad o caracteristica
+    // 
+    pincel.fillRect(340, 200, 70, 100); //funcion
+
+    //parte de la boca 
+    pincel.fillStyle = "black" //propiedad o caracteristica
+    // 
+    pincel.fillRect(300,240,40,110); //funcion boca N°1
+    pincel.fillRect(410,240,40,110); //funcion boca N°2
+
+</script>
+
+
